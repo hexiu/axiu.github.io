@@ -6,39 +6,47 @@ publishdate: "2018-08-13+08:00"
 lastmod: "2018-08-13+08:00"
 draft: false
 tags: ["vscode", "blog"]
-series: ["Example"]
+series: ["vscode"]
 categories: ["Sci"]
-img: "http://download.jaxiu.cn/2019-08-21-16-18-15.png"
+img: "https://download.jaxiu.cn/2019-08-22-16-13-00.png"
 toc: true
 summary: "This is an example of adding an intro picture to the post. "
 
 ---
 
-#  ubuntu玩转vscode 
+# ubuntu玩转vscode
 
 > 主要内容：ubuntu 使用vscode实现日常的各种需求，如何写书？golang编程，大幅度提升自己的效率
 
 ## vscode之golang编程
+
 ### ubuntu之基础构建
 
 #### 基础软件设施安装
+
 ##### shell 篇
+
 - 一句话安装zsh `sudo apt-get install git zsh wget -y; sh -c "$(wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"`
 
 ##### 编程篇
+
 - vscode 官网下载安装，使用自带的应用市场安装，可能会不能使用中文输入法
 
 ##### golang IDC
+
 - golang.org 下载最新的golang 版本
 - 安装目录一般将基础环境放在/opt下
 - 创建gopath ，编辑 ~/.zshrc ，设置环境变量`GOROOT, GOPATH, PATH指定GOROOT，GOPATH , 配置环境变量 GO111MODULE=on, 开启 go mod`，机器重启
 
 ### vscode 插件
-#### 插件选择 
-- go 
+
+#### 插件选择
+
+- go
 - koroFileHeader
 
 #### 插件配置
+
 ```json
 {
     "go.goroot": "GOROOT",
@@ -112,17 +120,34 @@ summary: "This is an example of adding an intro picture to the post. "
     },
 }
 ```
+
 通过以上的配置，vscode 已经完全可以驾驭golang编程
 
 ### vscode 之 markdown高级用法
+
 #### 基础环境构建
-#####  七牛云账号注册
+
+##### 七牛云账号注册
+
+- 打开 [七牛云官网](https://www.qiniu.com) ，注册七牛云用户
+- 进入控制台
+- 点击对象存储
+- 初始化一个空间，后续vscode 默认上传的图片在这里
+- 打开个人中心的密钥管理初始化一对密钥，这是api上传使用的凭证。
+- 拿着这些信息，以及七牛云分配的域名配置vscode的七牛云插件 （*此处的插件配置是页面化的*）
+
 ##### vscode 插件安装
-- markdownlint 
-- paste image to qiniu 
+
+- markdownlint
+- paste image to qiniu
 
 ##### vscode 插件配置
 
+- 此处参考七牛云账号注册模块
+
 #### markdown 使用测试
 
-测试
+- 使用Vscode书写markdown，然后去复制一个图片粘贴到粘贴版，在vscode中按快捷键  : `Ctrl + Alt + V`
+- 文件上传成功的截图
+- 这里可能会有上传失败的问题，可以看以下github下的issues
+- 使用issues中的打包版本替换原有的版本（一般的vscode插件放在 ~/.vscode下）
