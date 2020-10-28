@@ -10,3 +10,21 @@
     - 安装插件 `paste image to qiniu`, 记得看清楚快捷键， 不是 cmd + v ， 是 alt + cmd + v。
 - markdown 语法
 
+
+### 博客书写基础语法
+- 创建blog `hugo new blog/xxx.md`
+- 为blog文章增加标签等一系列信息
+```
+publishdate: "2018-08-13+08:00"
+lastmod: "2018-08-13+08:00"
+draft: false
+tags: ["vscode", "blog"]
+series: ["vscode"]
+categories: ["Sci"]
+img: "https://download.jaxiu.cn/2019-08-22-16-13-00.png"
+toc: true
+summary: "This is an example of adding an intro picture to the post. "
+```
+- 生成blog `hugo server --theme=AllinOne -D`
+
+- over
