@@ -2,3 +2,5 @@ content/moment/img
 content/about/img
 content/blog/img
 content/post/img
+img/*
+.vscode

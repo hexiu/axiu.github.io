@@ -14,7 +14,6 @@ summary: "This is an example of adding an intro picture to the post. "
 
 ---
 
-<<<<<<< HEAD
 # ubuntu玩转vscode
 
 > 主要内容：ubuntu 使用vscode实现日常的各种需求，如何写书？golang编程，大幅度提升自己的效率
@@ -161,7 +160,7 @@ API
 │   ├── server.crt               # TLS配置文件
 │   └── server.key
 ├── config                       # 专门用来处理配置和配置文件的Go package
-│   └── config.go                 
+│   └── config.go
 ├── db.sql                       # 在部署新环境时，可以登录MySQL客户端，执行source db.sql创建数据库和表
 ├── docs                         # swagger文档，执行 swag init 生成的
 │   ├── docs.go
@@ -171,7 +170,7 @@ API
 ├── handler                      # 类似MVC架构中的C，用来读取输入，并将处理流程转发给实际的处理函数，最后返回结果
 │   ├── handler.go
 │   ├── sd                       # 健康检查handler
-│   │   └── check.go 
+│   │   └── check.go
 │   └── user                     # 核心：用户业务逻辑handler
 │       ├── create.go            # 新增用户
 │       ├── delete.go            # 删除用户
@@ -203,7 +202,7 @@ API
 ├── README.md                    # API目录README
 ├── router                       # 路由相关处理
 │   ├── middleware               # API服务器用的是Gin Web框架，Gin中间件存放位置
-│   │   ├── auth.go 
+│   │   ├── auth.go
 │   │   ├── header.go
 │   │   ├── logging.go
 │   │   └── requestid.go
@@ -211,7 +210,7 @@ API
 ├── service                      # 实际业务处理函数存放位置
 │   └── service.go
 ├── util                         # 工具类函数存放目录
-│   ├── util.go 
+│   ├── util.go
 │   └── util_test.go
 └── vendor                         # vendor目录用来管理依赖包
     ├── github.com
@@ -219,4 +218,3 @@ API
     ├── gopkg.in
     └── vendor.json
 ```
->>>>>>> 91a5f4f78ab7efd94742e3593a3ebe3db6fe30ae
