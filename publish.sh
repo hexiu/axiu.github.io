@@ -1,13 +1,13 @@
 ###
  # @Date: 2020-12-25 14:47:43
  # @LastEditors: jaxiu
- # @LastEditTime: 2020-12-25 14:53:45
+ # @LastEditTime: 2020-12-25 14:57:52
  # @FilePath: /axiu.github.io/publish.sh
 ### 
 
 #!/bin/bash 
 # 
-hugo server --theme=AllinOne -D
+hugo
 rm -rf ../hexiu.github.io/*
 cp -rp ./public/* ../hexiu.github.io/ 
 cd ../hexiu.github.io/
