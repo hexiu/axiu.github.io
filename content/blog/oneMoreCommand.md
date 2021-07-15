@@ -46,3 +46,8 @@ find $DATA_DIR/ -type f -name "*.sql" -mtime +7 -exec rm -rf {} \;
 单引号引起来的起来的是命令
 docker run -ti --name mysql_t mysql:5.7.16 ' mysql -u root -proot -h 10.105.40.49 -e "show databases"'  ; docker stop mysql_t;docker rm mysql_t;
 ```
+
+一句话命令开启http访问当前页面
+```
+ docker run -dti --name nginx_t -v /tmp/test:/usr/share/nginx/html -p 8080:80 nginx
+```
