@@ -10,7 +10,7 @@ series: ["文件传输"]
 categories: ["Sci"]
 img: "https://download.jaxiu.cn/2021-08-02-11-19-58.png"
 toc: true
-summary: "This is an example of adding an intro picture to the post. "
+summary: "一个简单便捷好用的文件中转站"
 
 ---
 
